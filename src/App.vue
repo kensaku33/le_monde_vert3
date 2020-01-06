@@ -2,26 +2,32 @@
   <div id="app">
     <Header/>
     <router-view/>
+    <Footer/>
   </div>
 </template>
 
 <script>
 import Header from './views/Header.vue'
+import Footer from './views/Footer.vue'
 export default {
   name: 'app',
   components:{
     Header,
+    Footer,
   }
 }
 </script>
 
 <style>
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+}
+
+*{
+  font-family: 'Cormorant Garamond', serif;
 }
 
 #nav {
@@ -29,11 +35,14 @@ export default {
 }
 
 #nav a {
-  font-weight: bold;
-  color: #2c3e50;
+  color: #707070;
+}
+
+#nav a:hover{
+  text-decoration: none;
 }
 
 #nav a.router-link-exact-active {
-  color: #42b983;
+  color: #b9b9b9;
 }
 </style>
