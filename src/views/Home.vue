@@ -8,18 +8,20 @@
 
     <div class="text">
       <h1 class="sample mb-5">message</h1>
-      <p>洋服は、
+      <p>洋服は
         <br>
-          色、形（デザイン）、素材から
+          色、形
         <br>
-          成り立っています。
+          そして素材から
+        <br>
+          成り立っています
         <br>
         <br>
-          パーソナルカラーでお似合いの色を、
+          パーソナルカラーでお似合いの色を
         <br>
           ファッションテイスト診断で
         <br>
-          引き立てるデザインと,
+          引き立てるデザインと
         <br>
           素材をご提案します</p>
     </div>
@@ -34,21 +36,15 @@
     <div class="season-wrapper">
       <div class="spring-box">
         <h2 class="season-title">spring</h2>
-        <div class="season-btn" id="down">show more</div>
+        <div class="season-btn" id="toggle-spring">show more</div>
       </div>
       <div class="spring-box-bottom">
-        <div class="inner-blur">
-          <h2 class="inner-title">春色の服</h2>
-          <p class="inner-text">
-            春はあけぼのちりぬるを
-          <br>
-          <br>
-          夏は夕暮れ
-          <br>
-          <br>
-          秋は紅葉が美しい
+        <div class="spring-inner-blur">
+          <h2 class="spring-inner-title">春色の服</h2>
+          <p class="spring-inner-text">
+            パーソナルカラー診断でスプリングタイプの人は、透明感のある健康的な肌、ツヤのある髪、キラキラと輝くガラスのように澄んだ瞳の持ち主。明るく華やかなタイプです。
           </p>
-          <a class="show2" id="hide">文字を隠す</a>
+          <a class="show2" id="hide-spring">文字を隠す</a>
         </div>
       </div>
     </div>
@@ -57,12 +53,12 @@
     <div class="season-wrapper">
       <div class="summer-box">
         <h2 class="season-title">summer</h2>
-        <div class="season-btn" id="down">show more</div>
+        <div class="season-btn" id="toggle-summer">show more</div>
       </div>
       <div class="summer-box-bottom">
-        <div class="inner-blur">
-          <h2 class="inner-title">夏色の服</h2>
-          <p class="inner-text">
+        <div class="summer-inner-blur">
+          <h2 class="summer-inner-title">夏色の服</h2>
+          <p class="summer-inner-text">
             春はあけぼのちりぬるを
           <br>
           <br>
@@ -71,7 +67,7 @@
           <br>
           秋は紅葉が美しい
           </p>
-          <a class="show2" id="hide">文字を隠す</a>
+          <a class="show2" id="hide-summer">文字を隠す</a>
         </div>
       </div>
     </div>
@@ -81,12 +77,12 @@
     <div class="season-wrapper">
       <div class="autumn-box">
         <h2 class="season-title">autumn</h2>
-        <div class="season-btn" id="down">show more</div>
+        <div class="season-btn" id="toggle-autumn">show more</div>
       </div>
       <div class="autumn-box-bottom">
-        <div class="inner-blur">
-          <h2 class="inner-title">秋色の服</h2>
-          <p class="inner-text">
+        <div class="autumn-inner-blur">
+          <h2 class="autumn-inner-title">秋色の服</h2>
+          <p class="autumn-inner-text">
             春はあけぼのちりぬるを
           <br>
           <br>
@@ -95,7 +91,7 @@
           <br>
           秋は紅葉が美しい
           </p>
-          <a class="show2" id="hide">文字を隠す</a>
+          <a class="show2" id="hide-autumn">文字を隠す</a>
         </div>
       </div>
     </div>
@@ -104,12 +100,12 @@
     <div class="season-wrapper">
       <div class="winter-box">
         <h2 class="season-title">winter</h2>
-        <div class="season-btn" id="down">show more</div>
+        <div class="season-btn" id="toggle-winter">show more</div>
       </div>
       <div class="winter-box-bottom">
-        <div class="inner-blur">
-          <h2 class="inner-title">冬色の服</h2>
-          <p class="inner-text">
+        <div class="winter-inner-blur">
+          <h2 class="winter-inner-title">冬色の服</h2>
+          <p class="winter-inner-text">
             春はあけぼのちりぬるを
           <br>
           <br>
@@ -118,7 +114,7 @@
           <br>
           秋は紅葉が美しい
           </p>
-          <a class="show2" id="hide">文字を隠す</a>
+          <a class="show2" id="hide-winter">文字を隠す</a>
         </div>
       </div>
     </div>
@@ -141,6 +137,231 @@ export default {
     }
   }
 }
+
+// -------------------------------------------scroll-fadein---jquery
+const obj = $(".season-wrapper")
+$(window).on('scroll', function(){
+  $(".season-wrapper").each(function(){
+    const objPos = $(this).offset().top;
+    const scroll = $(window).scrollTop();
+    const windowH = $(window).height();
+    if(scroll > objPos - windowH){
+      $(this).css({
+        'opacity': '1'
+      });
+    } else {
+      $(this).css({
+        'opacity': '0'
+      });
+    }
+  });
+});
+
+// -------------------------------------------click-action---jquery
+
+// --------------------------------------------spring
+
+$(function(){
+  var num1 = 0;
+  $('#toggle-spring').on('click', function(){
+    num1 = num1 + 1;
+    if((num1 % 2)!= 0){
+      $('.spring-box-bottom').css({
+        height: '600px',
+        opacity: '1',
+      });
+      $('.spring-inner-blur').css({
+        width: '50%',
+        transition: '1s',
+      });
+      $('.spring-inner-text, .spring-inner-title, #hide-spring').css({
+        opacity: '1',
+        transition: '2s',
+      });
+      $('#toggle-spring').text('close');
+    }else{
+      $('.spring-box-bottom').css({
+        height: '0px',
+        opacity: '0',
+        transition: '1s',
+      });
+      $('.spring-inner-blur').css({
+        width: '0%',
+        transition: '1s',
+      });
+      $('.spring-inner-text, .spring-inner-title, #hide-spring').css({
+        opacity: '0',
+        transition: '1s',
+      });
+      $('#toggle-spring').text('show more');
+    }
+  });
+  $('#hide-spring').on('click', function(){
+    $('.spring-box-bottom').css({
+      height: '800px',
+      transition: '1s',
+    });
+    $('.spring-inner-blur').css({
+      width: '0%',
+      transition: '.8s',
+    });
+    $('.spring-inner-text, .spring-inner-title, #hide-spring').css({
+      opacity: '0',
+      transition: '.3s',
+    });
+  });   //-----------------------------------------spring
+
+  // --------------------------------------------summer
+  var num2 = 0;
+  $('#toggle-summer').on('click', function(){
+    num2 = num2 + 1;
+    if((num2 % 2)!= 0){
+      $('.summer-box-bottom').css({
+        height: '600px',
+        opacity: '1',
+      });
+      $('.summer-inner-blur').css({
+        width: '50%',
+        transition: '1s',
+      });
+      $('.summer-inner-text, .summer-inner-title, #hide-summer').css({
+        opacity: '1',
+        transition: '2s',
+      });
+      $('#toggle-summer').text('close');
+    }else{
+      $('.summer-box-bottom').css({
+        height: '0px',
+        opacity: '0',
+        transition: '1s',
+      });
+      $('.summer-inner-blur').css({
+        width: '0%',
+        transition: '1s',
+      });
+      $('.summer-inner-text, .summer-inner-title, #hide-summer').css({
+        opacity: '0',
+        transition: '1s',
+      });
+      $('#toggle-summer').text('show more');
+    }
+  });
+  $('#hide-summer').on('click', function(){
+    $('.summer-box-bottom').css({
+      height: '800px',
+      transition: '1s',
+    });
+    $('.summer-inner-blur').css({
+      width: '0%',
+      transition: '.8s',
+    });
+    $('.summer-inner-text, .summer-inner-title, #hide-summer').css({
+      opacity: '0',
+      transition: '.3s',
+    });
+  });   //-----------------------------------------summer
+
+  // --------------------------------------------autumn
+  var num3 = 0;
+  $('#toggle-autumn').on('click', function(){
+    num3 = num3 + 1;
+    if((num3 % 2)!= 0){
+      $('.autumn-box-bottom').css({
+        height: '600px',
+        opacity: '1',
+      });
+      $('.autumn-inner-blur').css({
+        width: '50%',
+        transition: '1s',
+      });
+      $('.autumn-inner-text, .autumn-inner-title, #hide-autumn').css({
+        opacity: '1',
+        transition: '2s',
+      });
+      $('#toggle-autumn').text('close');
+    }else{
+      $('.autumn-box-bottom').css({
+        height: '0px',
+        opacity: '0',
+        transition: '1s',
+      });
+      $('.autumn-inner-blur').css({
+        width: '0%',
+        transition: '1s',
+      });
+      $('.autumn-inner-text, .autumn-inner-title, #hide-autumn').css({
+        opacity: '0',
+        transition: '1s',
+      });
+      $('#toggle-autumn').text('show more');
+    }
+  });
+  $('#hide-autumn').on('click', function(){
+    $('.autumn-box-bottom').css({
+      height: '800px',
+      transition: '1s',
+    });
+    $('.autumn-inner-blur').css({
+      width: '0%',
+      transition: '.8s',
+    });
+    $('.autumn-inner-text, .autumn-inner-title, #hide-autumn').css({
+      opacity: '0',
+      transition: '.3s',
+    });
+  });   //-----------------------------------------autumn
+
+  // --------------------------------------------winter
+  var num4 = 0;
+  $('#toggle-winter').on('click', function(){
+    num4 = num4 + 1;
+    if((num4 % 2)!= 0){
+      $('.winter-box-bottom').css({
+        height: '600px',
+        opacity: '1',
+      });
+      $('.winter-inner-blur').css({
+        width: '50%',
+        transition: '1s',
+      });
+      $('.winter-inner-text, .winter-inner-title, #hide-winter').css({
+        opacity: '1',
+        transition: '2s',
+      });
+      $('#toggle-winter').text('close');
+    }else{
+      $('.winter-box-bottom').css({
+        height: '0px',
+        opacity: '0',
+        transition: '1s',
+      });
+      $('.winter-inner-blur').css({
+        width: '0%',
+        transition: '1s',
+      });
+      $('.winter-inner-text, .winter-inner-title, #hide-winter').css({
+        opacity: '0',
+        transition: '1s',
+      });
+      $('#toggle-winter').text('show more');
+    }
+  });
+  $('#hide-winter').on('click', function(){
+    $('.winter-box-bottom').css({
+      height: '800px',
+      transition: '1s',
+    });
+    $('.winter-inner-blur').css({
+      width: '0%',
+      transition: '.8s',
+    });
+    $('.winter-inner-text, .winter-inner-title, #hide-winter').css({
+      opacity: '0',
+      transition: '.3s',
+    });
+  });   //-----------------------------------------winter
+})
+
 </script>
 
 
@@ -191,10 +412,12 @@ li {
   object-fit:cover;
 }
 
-/* 共通項 */
+/* 共通項 -----------------------共通項---------------------共通項------------------*/
 .season-wrapper{
   font-size: 18px;
   margin: 400px 0;
+  opacity: 0;
+  transition: 2s;
 }
 .season-title{
   font-size: 56px;
@@ -217,33 +440,20 @@ li {
 .inner-blur{
   margin: 0 0 0 auto;
   height: 100%;
-  width: 50%;
+  width: 0%;
   backdrop-filter: blur(10px);
-}
-.blur{
-  animation-name: slideIn;
-  animation-duration: 1s;
-  animation-fill-mode: both;
-  animation-delay: 1s;
-}
-@keyframes slideIn{
-  0%{
-    width:0%;
-  }
-  100%{
-    width: 50%;
-  }
 }
 
 .inner-title{
   color: white;
   font-size: 24px;
   padding-top: 100px;
+  opacity: 0;
 }
 .inner-text{
   color: white;
   padding: 80px 0 50px 0;
-
+  opacity: 0;
 }
 .show{
   border: 1px solid white;
@@ -261,7 +471,6 @@ li {
   border: 1px solid white;
   color:white;
   padding: 10px 30px;
-  /* margin: 150px 30px; */
   transition: 1s;
   cursor: pointer;
   display: inline-block;
@@ -271,36 +480,14 @@ li {
   color: white;
 }
 
-.fade{
-  animation-name: fadeIn;
-  animation-duration: 1s;
-  animation-fill-mode: both;
-  animation-delay: 1.2s;
-}
-@keyframes fadeIn{
-  0%{
-    opacity: 0;
-  }
-  100%{
-    opacity: 1;
-  }
-}
-@-webkit-keyframes fadeIn{
-    0% {
-      opacity: 0;
-      }
-    100% {
-      opacity: 1;
-      }
-}
-/* ここまで */
+/* 共通項 ------------------ ここまで ------------------- 共通項 ------------------- */
 
 
-
+/* ------------------------------------------------------------spring */
 .spring-box{
   width: 100%;
   height: 450px;
-  background-color: #e8f3d2;
+  background-color: #bcd094;
   color: white;
   text-align: center;
   padding: auto 0;
@@ -312,10 +499,46 @@ li {
   background-size: cover;
   background-image:url("https://lh3.googleusercontent.com/a1WiseEVAqwaXKrelUKmlxB_ZZd_EMRb0jvaPfIydzO3waMZBhcDXhkvytah8z84J9CvH1K6loWcmnf9osKhADoXuBabVVv6bJImd9NQr8RtwxVVfYsn46BCGzpN72CoKZrzUR0wyEM=w2400");
   width: 100%;
-  height: 600px;
-  transform: 1s;
+  height: 0px;
+  opacity: 0;
   transition: 1s;
 }
+.spring-inner-blur{
+  margin: 0 0 0 auto;
+  height: 100%;
+  width: 0%;
+  backdrop-filter: blur(10px);
+}
+
+.spring-inner-title{
+  color: white;
+  font-size: 24px;
+  padding-top: 100px;
+  opacity: 0;
+}
+.spring-inner-text{
+  color: white;
+  padding: 80px 0 50px 0;
+  opacity: 0;
+}
+#hide-spring{
+  border: 1px solid white;
+  color:white;
+  padding: 10px 30px;
+
+  transition: 1s;
+  cursor: pointer;
+  display: inline-block;
+}
+#hide-spring:hover{
+  letter-spacing: 5px;
+  color: white;
+}
+
+
+/* --------------------------------------------------------------ここまでspring */
+
+/* ------------------------------------------------------------------summer  */
 
 .summer-box{
   width: 100%;
@@ -332,10 +555,45 @@ li {
   background-size: cover;
   background-image: url("https://lh3.googleusercontent.com/0Yw2epNLaQJqu_HG1A4MQ3NyOOHFuwsO8OPoP9U7QbuFuEMgax2NlgHY2H0G9MaTQ-xeHpYW7P1x-HUH55W7ZJsSotW56kR_gxOKGvalUfqsuHhE0aykBbb2_fhn-WHU6qTk2Eq17AU=w2400");
   width: 100%;
-  height: 600px;
+  height: 0px;
   transform: 1s;
   transition: 1s;
 }
+.summer-inner-blur{
+  margin: 0 0 0 auto;
+  height: 100%;
+  width: 0%;
+  backdrop-filter: blur(10px);
+}
+
+.summer-inner-title{
+  color: white;
+  font-size: 24px;
+  padding-top: 100px;
+  opacity: 0;
+}
+.summer-inner-text{
+  color: white;
+  padding: 80px 0 50px 0;
+  opacity: 0;
+}
+#hide-summer{
+  border: 1px solid white;
+  color:white;
+  padding: 10px 30px;
+
+  transition: 1s;
+  cursor: pointer;
+  display: inline-block;
+}
+#hide-summer:hover{
+  letter-spacing: 5px;
+  color: white;
+}
+
+/* ----------------------------------------------------ここまでsummer */
+
+/* ------------------------------------------------------autumn  */
 
 .autumn-box{
   width: 100%;
@@ -352,10 +610,45 @@ li {
   background-size: cover;
   background-image: url("https://lh3.googleusercontent.com/tS4W6LhL2Cs8ADylsD5TNW2iEOGEnYsbbaPJM-Ny-BQIBwwucCGpzAQ2HZI5OPl55d39G54S5me1IVIqOd1gEfEz_Sm3siMLLbAUZHCCVi8uG4APfDJcrzSrvb-EFMFNGdg9HAF-F6I=w2400");
   width: 100%;
-  height: 600px;
+  height: 0px;
   transform: 1s;
   transition: 1s;
 }
+.autumn-inner-blur{
+  margin: 0 0 0 auto;
+  height: 100%;
+  width: 0%;
+  backdrop-filter: blur(10px);
+}
+
+.autumn-inner-title{
+  color: white;
+  font-size: 24px;
+  padding-top: 100px;
+  opacity: 0;
+}
+.autumn-inner-text{
+  color: white;
+  padding: 80px 0 50px 0;
+  opacity: 0;
+}
+#hide-autumn{
+  border: 1px solid white;
+  color:white;
+  padding: 10px 30px;
+
+  transition: 1s;
+  cursor: pointer;
+  display: inline-block;
+}
+#hide-autumn:hover{
+  letter-spacing: 5px;
+  color: white;
+}
+
+/* -------------------------------------------------------ここまでautumn */
+
+/* -----------------------------------------------------------winter */
 
 .winter-box{
   width: 100%;
@@ -372,10 +665,43 @@ li {
   background-size: cover;
   background-image: url("https://lh3.googleusercontent.com/4W28sCXXNpYEEmb0N4m6wan38v0gmjJX9D0gnl3z0dTJddRKM1YTZM05Xz3wi5k1AQhS1gTnb68c5RbFD4H4QqCFdouTT9Zdi5sq7BwTr-OUC7K8GAl9ReXqBP0N0hS4v_-7zzRtwho=w2400");
   width: 100%;
-  height: 600px;
+  height: 0px;
   transform: 1s;
   transition: 1s;
 }
+
+.winter-inner-blur{
+  margin: 0 0 0 auto;
+  height: 100%;
+  width: 0%;
+  backdrop-filter: blur(10px);
+}
+.winter-inner-title{
+  color: white;
+  font-size: 24px;
+  padding-top: 100px;
+  opacity: 0;
+}
+.winter-inner-text{
+  color: white;
+  padding: 80px 0 50px 0;
+  opacity: 0;
+}
+#hide-winter{
+  border: 1px solid white;
+  color:white;
+  padding: 10px 30px;
+
+  transition: 1s;
+  cursor: pointer;
+  display: inline-block;
+}
+#hide-winter:hover{
+  letter-spacing: 5px;
+  color: white;
+}
+
+/* ---------------------------------------------------------ここまでwinter */
 
 
 
