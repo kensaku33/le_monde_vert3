@@ -29,7 +29,7 @@
 
 
     <div class="sample mt-5">
-      <h1 class="m-2">Parsonal color Sample</h1>
+      <h1 class="m-2">Parsonal Color</h1>
       <p class="your mb-5">あなたの色は？</p>
 
     <!-- 春 -->
@@ -165,13 +165,14 @@ $(function(){
   var num1 = 0;
   $(document).on('click','#toggle-spring', function(){
     num1 = num1 + 1;
+    
     if((num1 % 2)!= 0){
       $('.spring-box-bottom').css({
         height: '600px',
         opacity: '1',
       });
       $('.spring-inner-blur').css({
-        width: '50%',
+        width: '100%',
         transition: '1s',
       });
       $('.spring-inner-text, .spring-inner-title, #hide-spring').css({
@@ -221,7 +222,7 @@ $(function(){
         opacity: '1',
       });
       $('.summer-inner-blur').css({
-        width: '50%',
+        width: '100%',
         transition: '1s',
       });
       $('.summer-inner-text, .summer-inner-title, #hide-summer').css({
@@ -271,7 +272,7 @@ $(function(){
         opacity: '1',
       });
       $('.autumn-inner-blur').css({
-        width: '50%',
+        width: '100%',
         transition: '1s',
       });
       $('.autumn-inner-text, .autumn-inner-title, #hide-autumn').css({
@@ -321,7 +322,7 @@ $(function(){
         opacity: '1',
       });
       $('.winter-inner-blur').css({
-        width: '50%',
+        width: '100%',
         transition: '1s',
       });
       $('.winter-inner-text, .winter-inner-title, #hide-winter').css({
@@ -704,7 +705,33 @@ li {
 /* ---------------------------------------------------------ここまでwinter */
 
 
+/* -------------------------------------------------------------mobile */
+@media screen and (max-width: 640px) {
+  .main-img{
+    height:900px;
+  }
+}
 
+.spring-box{
+  width: 100%;
+  height: 450px;
+  background-color: #bcd094;
+  color: white;
+  text-align: center;
+  padding: auto 0;
+}
+.spring-box-bottom{
+  position: relative;
+  background-repeat:  no-repeat;                         /* 画像の繰り返しを指定  */              
+  background-position:center center;                     /* 画像の表示位置を指定  */
+  background-size: cover;
+  background-image:url("https://lh3.googleusercontent.com/a1WiseEVAqwaXKrelUKmlxB_ZZd_EMRb0jvaPfIydzO3waMZBhcDXhkvytah8z84J9CvH1K6loWcmnf9osKhADoXuBabVVv6bJImd9NQr8RtwxVVfYsn46BCGzpN72CoKZrzUR0wyEM=w2400");
+  width: 100%;
+  height: 0px;
+  opacity: 0;
+  transition: 1s;
+}
+/* ---------------------------------------------------------------------- */
 
 .season-img{
   height: 300px;
