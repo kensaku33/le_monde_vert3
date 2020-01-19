@@ -213,16 +213,159 @@ $(window).on('scroll', function(){
         }
     });
 
+    // const leftIn = $(".order-left-img")
+    // const rightText = $(".order-right-contents")
+    // const rightIn = $(".order-right-img")
+    // const leftText = $(".order-left-contents")
 
-    $(window).on('load resize', function(){
-        var winW = $(window).width();
-        var devW = 640;
-        if (winW <= devW) {
-            //640px以下の時の処理
-        } else {
-            //640pxより大きい時の処理
-        }
-    });
+    
+
+
+    // $(window).on('load resize', function(){
+    //     var winW = $(window).width();
+    //     var devW = 640;
+    //     if (winW <= devW) {
+    //         //----------------------------------------------640px以下の時の処理
+    //         leftIn.each(function(){   // left-in
+    //             const objPos = $(this).offset().top;
+    //             const scroll = $(window).scrollTop();
+    //             const windowH = $(window).height();
+    //             if(scroll > objPos - windowH){
+    //                 $(this).css({
+    //                     'transform': 'translate(-100px,0)',
+    //                     'transition': '1s'
+    //                 })
+    //             } else {
+    //                 $(this).css({
+    //                     'transform': 'translate(-200px,0)',
+    //                     'transition': '1s'
+    //                 });
+    //             }
+    //         });
+    //         rightText.each(function(){   // left-in
+    //             const objPos = $(this).offset().top;
+    //             const scroll = $(window).scrollTop();
+    //             const windowH = $(window).height();
+    //             if(scroll > objPos - windowH){
+    //                 $(this).css({
+    //                     'transform': 'translate(0px,0)',
+    //                     'transition': '1s',
+    //                     opacity: '1'
+    //                 })
+    //             } else {
+    //                 $(this).css({
+    //                     'transform': 'translate(0px,100px)',
+    //                     'transition': '1s',
+    //                 opacity: '0'
+    //                 })
+    //             }
+    //         });
+    //         rightIn.each(function(){   // right-in
+    //             const objPos = $(this).offset().top;
+    //             const scroll = $(window).scrollTop();
+    //             const windowH = $(window).height();
+    //             if(scroll > objPos - windowH){
+    //                 $(this).css({
+    //                     'transform': 'translate(100px,0)',
+    //                     'transition': '1s'
+    //                 })
+    //             } else {
+    //                 $(this).css({
+    //                     'transform': 'translate(200px,0)',
+    //                     'transition': '1s'
+    //                 });
+    //             }
+    //         });
+    //         leftText.each(function(){
+    //             const objPos = $(this).offset().top;
+    //             const scroll = $(window).scrollTop();
+    //             const windowH = $(window).height();
+    //             if(scroll > objPos - windowH){
+    //                 $(this).css({
+    //                     'transform': 'translate(0px,0)',
+    //                     'transition': '1s',
+    //                     opacity: '1'
+    //                 })
+    //             } else {
+    //                 $(this).css({
+    //                     'transform': 'translate(0px,100px)',
+    //                     'transition': '1s',
+    //                 opacity: '0'
+    //                 })
+    //             }
+    //         });
+    //     } else {
+    //         //----------------------------------------------640pxより大きい時の処理
+    //         leftIn.each(function(){   // left-in
+    //             const objPos = $(this).offset().top;
+    //             const scroll = $(window).scrollTop();
+    //             const windowH = $(window).height();
+    //             if(scroll > objPos - windowH){
+    //                 $(this).css({
+    //                     'transform': 'translate(-100px,0)',
+    //                     'transition': '1s'
+    //                 })
+    //             } else {
+    //                 $(this).css({
+    //                     'transform': 'translate(-200px,0)',
+    //                     'transition': '1s'
+    //                 });
+    //             }
+    //         });
+    //         rightText.each(function(){   // left-in
+    //             const objPos = $(this).offset().top;
+    //             const scroll = $(window).scrollTop();
+    //             const windowH = $(window).height();
+    //             if(scroll > objPos - windowH){
+    //                 $(this).css({
+    //                     'transform': 'translate(0px,0)',
+    //                     'transition': '1s',
+    //                     opacity: '1'
+    //                 })
+    //             } else {
+    //                 $(this).css({
+    //                     'transform': 'translate(0px,100px)',
+    //                     'transition': '1s',
+    //                 opacity: '0'
+    //                 })
+    //             }
+    //         });
+    //         rightIn.each(function(){   // right-in
+    //             const objPos = $(this).offset().top;
+    //             const scroll = $(window).scrollTop();
+    //             const windowH = $(window).height();
+    //             if(scroll > objPos - windowH){
+    //                 $(this).css({
+    //                     'transform': 'translate(100px,0)',
+    //                     'transition': '1s'
+    //                 })
+    //             } else {
+    //                 $(this).css({
+    //                     'transform': 'translate(200px,0)',
+    //                     'transition': '1s'
+    //                 });
+    //             }
+    //         });
+    //         leftText.each(function(){
+    //             const objPos = $(this).offset().top;
+    //             const scroll = $(window).scrollTop();
+    //             const windowH = $(window).height();
+    //             if(scroll > objPos - windowH){
+    //                 $(this).css({
+    //                     'transform': 'translate(0px,0)',
+    //                     'transition': '1s',
+    //                     opacity: '1'
+    //                 })
+    //             } else {
+    //                 $(this).css({
+    //                     'transform': 'translate(0px,100px)',
+    //                     'transition': '1s',
+    //                 opacity: '0'
+    //                 })
+    //             }
+    //         });
+    //     }
+    // });
 // -------------------------------------------scroll-fadein---jquery-end
     const leftIn = $(".order-left-img")
     const rightText = $(".order-right-contents")
@@ -412,6 +555,36 @@ background-size: cover;
 }
 
 /* ------------------------------------------------------------------ */
+
+/* -------------------------------------------------------------mobile */
+@media screen and (max-width: 640px) {
+    .container{
+    position: relative;
+    display: flex;
+    opacity: 0;
+    transition: 1.5s;
+    margin-bottom: 300px;
+    }
+    .order-right-contents{
+    top:700px;
+    width: 300px;
+    transform: translate(0px,100px);
+    opacity: 0;
+    }
+    .order-num-odd{
+    font-size: 120px;
+    color: #b9b9b9;
+    text-align: left;
+    border-bottom: 1px solid #b9b9b9;
+    }
+    .order-text-odd{
+    margin-top: 50px;
+    color: #b9b9b9;
+    text-align: left;
+    }
+}
+
+/* --------------------------------------------------------------------- */
 h2{
     color:#b9b9b9;
     font-size: 80px;
