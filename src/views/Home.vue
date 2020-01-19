@@ -163,7 +163,7 @@ $(window).on('scroll', function(){
 
 $(function(){
   var num1 = 0;
-  $('#toggle-spring').on('click', function(){
+  $(document).on('click','#toggle-spring', function(){
     num1 = num1 + 1;
     if((num1 % 2)!= 0){
       $('.spring-box-bottom').css({
@@ -196,7 +196,7 @@ $(function(){
       $('#toggle-spring').text('show more');
     }
   });
-  $('#hide-spring').on('click', function(){
+  $(document).on('click','#hide-spring', function(){
     $('.spring-box-bottom').css({
       height: '800px',
       transition: '1s',
@@ -213,7 +213,7 @@ $(function(){
 
   // --------------------------------------------summer
   var num2 = 0;
-  $('#toggle-summer').on('click', function(){
+  $(document).on('click','#toggle-summer', function(){
     num2 = num2 + 1;
     if((num2 % 2)!= 0){
       $('.summer-box-bottom').css({
@@ -246,7 +246,7 @@ $(function(){
       $('#toggle-summer').text('show more');
     }
   });
-  $('#hide-summer').on('click', function(){
+  $(document).on('click','#hide-summer', function(){
     $('.summer-box-bottom').css({
       height: '800px',
       transition: '1s',
@@ -263,7 +263,7 @@ $(function(){
 
   // --------------------------------------------autumn
   var num3 = 0;
-  $('#toggle-autumn').on('click', function(){
+  $(document).on('click','#toggle-autumn', function(){
     num3 = num3 + 1;
     if((num3 % 2)!= 0){
       $('.autumn-box-bottom').css({
@@ -296,7 +296,7 @@ $(function(){
       $('#toggle-autumn').text('show more');
     }
   });
-  $('#hide-autumn').on('click', function(){
+  $(document).on('click','#hide-autumn', function(){
     $('.autumn-box-bottom').css({
       height: '800px',
       transition: '1s',
@@ -313,7 +313,7 @@ $(function(){
 
   // --------------------------------------------winter
   var num4 = 0;
-  $('#toggle-winter').on('click', function(){
+  $(document).on('click','#toggle-winter', function(){
     num4 = num4 + 1;
     if((num4 % 2)!= 0){
       $('.winter-box-bottom').css({
@@ -346,7 +346,7 @@ $(function(){
       $('#toggle-winter').text('show more');
     }
   });
-  $('#hide-winter').on('click', function(){
+  $(document).on('click','#hide-winter', function(){
     $('.winter-box-bottom').css({
       height: '800px',
       transition: '1s',
