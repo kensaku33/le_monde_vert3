@@ -25,31 +25,67 @@
 
 
 <style scaped >
-  .footer{
-    margin-top: 100px;
-    width: 100%;
-    background-color:#efeee8;
-  }
-  .footer-wrap{
-    display:-webkit-box;
-    display:-ms-flexbox;
-    display:flex;
-    -ms-flex-pack:distribute;
-    justify-content:space-around;
-  }
-  .footer-logo{
-    height:100px;
-    margin: 60px 0 0 0px;
-  }
-  .footer-info{
-    width: 220px;
-    margin-top: 50px;
-    text-align: right;
-    float: right;
-    /* background-color: yellow; */
-  }
-  .copylight{
-    margin: 0;
-    padding: 0 0 50px 0;
-  }
+
+@media screen and (max-width: 640px) {
+.footer{
+  margin-top: 100px;
+  margin-bottom: 0;
+  width: 100%;
+  background-color:#efeee8;
+
+}
+.footer-wrap{
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+  -ms-flex-pack:distribute;
+  justify-content:space-around;
+}
+.footer-logo{
+  height: 70px;
+  margin: 60px 0 0 0px;
+}
+.footer-info{
+  width: 100px;
+  margin-top: 50px;
+  text-align: right;
+  float: right;
+  font-size: 10px;
+  /* background-color: yellow; */
+}
+.copylight{
+  margin: 0;
+  padding: 0 0 50px 0;
+}
+}
+
+@media screen and (min-width: 640px) {
+.footer{
+  margin-top: 100px;
+  width: 100%;
+  background-color:#efeee8;
+}
+.footer-wrap{
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+  -ms-flex-pack:distribute;
+  justify-content:space-around;
+}
+.footer-logo{
+  height:100px;
+  margin: 60px 0 0 0px;
+}
+.footer-info{
+  width: 220px;
+  margin-top: 50px;
+  text-align: right;
+  float: right;
+  /* background-color: yellow; */
+}
+.copylight{
+  margin: 0;
+  padding: 0 0 50px 0;
+}
+}
 </style>

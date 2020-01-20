@@ -409,7 +409,7 @@ li {
   font-size: 1.4rem;
 }
 .main-img{
-  width:1200px;
+  width:100%;
   object-fit:cover;
 }
 
@@ -708,7 +708,7 @@ li {
 /* -------------------------------------------------------------mobile */
 @media screen and (max-width: 640px) {
   .main-img{
-    height:900px;
+    height:600px;
   }
 }
 

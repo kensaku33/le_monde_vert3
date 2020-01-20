@@ -1,4 +1,5 @@
 <template>
+
   <div class="header">
     <div class="logo">
       <router-link to="/">
@@ -105,27 +106,5 @@
   }
   .logo-img{
     height: 100px;
-  }
-
-  @media screen and (max-width: 810px) {
-    .header{
-      position: absolute;
-      top: 0;
-      z-index: 3;
-      height: 180px;
-      width: 100%;
-      background-color: #efeee8a9;
-    }
-  }
-
-  @media screen and (max-width: 640px) {
-    .header{
-      position: absolute;
-      top: 0;
-      z-index: 3;
-      height: 200px;
-      width: 100%;
-      background-color: #efeee8a9;
-    }
   }
 </style>

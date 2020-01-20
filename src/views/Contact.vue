@@ -17,6 +17,12 @@
 </template>
 
 <style scoped>
+@media screen and (max-width: 640px) {
+    .main-img{
+        height:600px;
+        object-fit:cover;
+    }
+}
 .fade-enter{
     opacity: 0;
 }
