@@ -115,10 +115,15 @@
         <div class="order-left-img image1"></div>
         <div class="order-right-contents col-auto">
         <h1 class="order-num-odd">No.7</h1>
-        <p class="order-text-odd">生地決定、本縫い
-※料金が発生します
-	ジャケット、ワンピース　¥40000-
-	パンツ、スカート、ブラウス　￥20000-</p>
+        <p class="order-text-odd">
+            生地決定、本縫い
+            <br>
+            ※料金が発生します
+            <br>
+            <br>
+            ジャケット、ワンピース　¥40000-
+            <br>
+            パンツ、スカート、ブラウス　￥20000-</p>
         </div>
     </div>
 </section>
@@ -156,17 +161,22 @@
 <div class="caution">
     <h3>▲Caution</h3>
     <p class="caution-text">
-        ご確認ください
+        <span class="underbar">ご確認ください</span>
         <br>
         <br>
-        ５、型紙作成時、７、本縫い時に料金が発生いたします。
+        ５、型紙作成時
+        <br>
+        ７、本縫い時に料金が発生いたします。
+        <br>
         <br>
         ９、請算時は使用生地の代金の請算です。
         <br>
         <br>
         納期は進行過程により異なります。
         <br>
-        仮縫などのご来店が必要なタイミングは納期に影響しますのでご注意ください。
+        仮縫などのご来店が必要なタイミングは
+        <br>
+        納期に影響しますのでご注意ください。
     </p>
 </div>
 
@@ -455,10 +465,6 @@ transition: 1.5s;
 margin-bottom: 300px;
 }
 
-.one{
-    opacity: 0;
-}
-
 .image1{
     background-image:url("https://lh3.googleusercontent.com/WSg0pT2Tc_7wH5A3wqWO3SzA5NTQRTJhlgGb_L9uGlZKuDqrhWquDZr9iGWNqbNpCtem6SgyGrLD5av0qbMQW62qIw3Osug3mWwn-qZbwSNHCDB0cxmi8rO5eF4iBZBBH5s6vcb4034=w2400");
 }
@@ -490,8 +496,19 @@ margin-bottom: 300px;
 .caution-text{
     white-space:pre;
 }
-/* -------------------------------------------------------odd contrents*/
-.order-left-img{
+/* -----------------------------------------------------------------------------------------------------------for PC */
+@media screen and (min-width: 950px) {
+h2{
+    color:#b9b9b9;
+    font-size: 80px;
+    margin: 200px 0;
+}
+h3{
+    color:#b9b9b9;
+    font-size: 50px;
+    margin: 100px 0;
+}
+.order-left-img{/* -----------------------odd contrents*/
 width: 500px;
 height: 500px;      
 transform: translate(-200px,0);
@@ -514,15 +531,6 @@ border-bottom: 1px solid #b9b9b9;
 margin-top: 50px;
 color: #b9b9b9;
 text-align: left;
-}
-.right-box{
-    position: absolute;
-    height: 200px;
-    width: 300px;
-    background-color: #efeee8d1;
-    top: 200px;
-    right: 0;
-    z-index: -3;
 }
 /* ---------------------------------------------------------even contents*/
 .underbar{
@@ -553,26 +561,110 @@ background-repeat:  no-repeat;
 background-position:center center;  
 background-size: cover;
 }
+}
 
-/* ------------------------------------------------------------------ */
+@media screen and (max-width: 909px) {  /* ----------------------------------------------------910 */
+h2{
+    color:#b9b9b9;
+    font-size: 80px;
+    margin: 200px 0;
+}
+h3{
+    color:#b9b9b9;
+    font-size: 50px;
+    margin: 100px 0;
+}
+.container{
+width: 100%;
+height: 500px;
+position: relative;
+}
+.order-left-img{/* -----------------------odd contrents*/
+width: 500px;
+height: 500px;      
+transform: translate(-200px,0);
+background-repeat:  no-repeat;                         /* 画像の繰り返しを指定  */              
+background-position:center center;                     /* 画像の表示位置を指定  */
+background-size: cover;
+}
+.order-right-contents{
+width: 300px;
+transform: translate(0px,100px);
+opacity: 0;
+}
+.order-num-odd{
+font-size: 120px;
+color: #b9b9b9;
+text-align: left;
+border-bottom: 1px solid #b9b9b9;
+}
+.order-text-odd{
+margin-top: 50px;
+color: #b9b9b9;
+text-align: left;
+}
+/* ---------------------------------------------------------even contents*/
+.underbar{
+border-bottom: 1px solid #b9b9b9;
+}
+.order-left-contents{
+position: absolute;
+right: 520px;
+width: 300px;
+}
+.order-num-even{
+font-size: 120px;
+color: #b9b9b9;
+text-align: left;
+border-bottom: 1px solid #b9b9b9;
+}
+.order-text-even{
+margin-top: 50px;
+color: #b9b9b9;
+text-align: left;
+}
+.order-right-img{
+margin: 0 0 0 auto;
+width: 500px;
+height: 500px;
+background-color: #efeee8d1;
+background-repeat:  no-repeat;  
+background-position:center center;  
+background-size: cover;
+}
+}
 
-/* -------------------------------------------------------------mobile */
+
+/* -----------------------------------------------------------------------------------------------------------------------mobile */
 @media screen and (max-width: 640px) {
+    .main-img{
+        height:600px;
+        object-fit:cover;
+    }
+
     .container{
-    position: relative;
-    display: flex;
-    opacity: 0;
-    transition: 1.5s;
-    margin-bottom: 300px;
+        width: 100%;
+        height: 750px;
+        position: relative;
+    }
+    .order-left-img{
+    min-width: 400px;
+    height: 400px;      
+    transform: translate(-200px,0);
+    background-repeat:  no-repeat;                         /* 画像の繰り返しを指定  */              
+    background-position:center center;                     /* 画像の表示位置を指定  */
+    background-size: cover;
     }
     .order-right-contents{
-    top:700px;
+    position: absolute;
+    top: 50px;
+    left: 460px;
     width: 300px;
     transform: translate(0px,100px);
     opacity: 0;
     }
     .order-num-odd{
-    font-size: 120px;
+    font-size: 60px;
     color: #b9b9b9;
     text-align: left;
     border-bottom: 1px solid #b9b9b9;
@@ -582,6 +674,44 @@ background-size: cover;
     color: #b9b9b9;
     text-align: left;
     }
+
+/* ---------------------------------------------------------even contents*/
+.underbar{
+border-bottom: 1px solid #b9b9b9;
+}
+.order-left-contents{
+position: absolute;
+top: 50px;
+right: 460px;
+width: 300px;
+}
+.order-num-even{
+font-size: 60px;
+color: #b9b9b9;
+text-align: left;
+border-bottom: 1px solid #b9b9b9;
+}
+.order-text-even{
+margin-top: 50px;
+color: #b9b9b9;
+text-align: left;
+}
+.order-right-img{
+margin: 0 0 0 auto;
+width: 400px;
+height: 400px;
+background-color: #efeee8d1;
+background-repeat:  no-repeat;  
+background-position:center center;  
+background-size: cover; 
+}
+.caution-text{
+    display: inline-block;
+    height: 300px;
+    width: 300px;
+    font-size: 12px;
+    color:#b9b9b9;
+}
 }
 
 /* --------------------------------------------------------------------- */
@@ -595,11 +725,7 @@ h3{
     font-size: 50px;
     margin: 100px 0;
 }
-.background{
-    width: 100%;
-    height: 400px;
-    background-color: aquamarine;
-}
+
 
 .fade-enter{
     opacity: 0;
