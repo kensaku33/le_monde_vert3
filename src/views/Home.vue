@@ -401,6 +401,7 @@ li {
 }
 
 .text{
+  margin-top: 100vh;
   margin-bottom: 200px;
   font-size: 18px;
 }
@@ -409,7 +410,11 @@ li {
   font-size: 1.4rem;
 }
 .main-img{
+  position: absolute;
+  top: 0;
+  left: 0;
   width:100%;
+  /* height: 100vh; */
   object-fit:cover;
 }
 
