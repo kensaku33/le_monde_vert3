@@ -223,159 +223,6 @@ $(window).on('scroll', function(){
         }
     });
 
-    // const leftIn = $(".order-left-img")
-    // const rightText = $(".order-right-contents")
-    // const rightIn = $(".order-right-img")
-    // const leftText = $(".order-left-contents")
-
-    
-
-
-    // $(window).on('load resize', function(){
-    //     var winW = $(window).width();
-    //     var devW = 640;
-    //     if (winW <= devW) {
-    //         //----------------------------------------------640px以下の時の処理
-    //         leftIn.each(function(){   // left-in
-    //             const objPos = $(this).offset().top;
-    //             const scroll = $(window).scrollTop();
-    //             const windowH = $(window).height();
-    //             if(scroll > objPos - windowH){
-    //                 $(this).css({
-    //                     'transform': 'translate(-100px,0)',
-    //                     'transition': '1s'
-    //                 })
-    //             } else {
-    //                 $(this).css({
-    //                     'transform': 'translate(-200px,0)',
-    //                     'transition': '1s'
-    //                 });
-    //             }
-    //         });
-    //         rightText.each(function(){   // left-in
-    //             const objPos = $(this).offset().top;
-    //             const scroll = $(window).scrollTop();
-    //             const windowH = $(window).height();
-    //             if(scroll > objPos - windowH){
-    //                 $(this).css({
-    //                     'transform': 'translate(0px,0)',
-    //                     'transition': '1s',
-    //                     opacity: '1'
-    //                 })
-    //             } else {
-    //                 $(this).css({
-    //                     'transform': 'translate(0px,100px)',
-    //                     'transition': '1s',
-    //                 opacity: '0'
-    //                 })
-    //             }
-    //         });
-    //         rightIn.each(function(){   // right-in
-    //             const objPos = $(this).offset().top;
-    //             const scroll = $(window).scrollTop();
-    //             const windowH = $(window).height();
-    //             if(scroll > objPos - windowH){
-    //                 $(this).css({
-    //                     'transform': 'translate(100px,0)',
-    //                     'transition': '1s'
-    //                 })
-    //             } else {
-    //                 $(this).css({
-    //                     'transform': 'translate(200px,0)',
-    //                     'transition': '1s'
-    //                 });
-    //             }
-    //         });
-    //         leftText.each(function(){
-    //             const objPos = $(this).offset().top;
-    //             const scroll = $(window).scrollTop();
-    //             const windowH = $(window).height();
-    //             if(scroll > objPos - windowH){
-    //                 $(this).css({
-    //                     'transform': 'translate(0px,0)',
-    //                     'transition': '1s',
-    //                     opacity: '1'
-    //                 })
-    //             } else {
-    //                 $(this).css({
-    //                     'transform': 'translate(0px,100px)',
-    //                     'transition': '1s',
-    //                 opacity: '0'
-    //                 })
-    //             }
-    //         });
-    //     } else {
-    //         //----------------------------------------------640pxより大きい時の処理
-    //         leftIn.each(function(){   // left-in
-    //             const objPos = $(this).offset().top;
-    //             const scroll = $(window).scrollTop();
-    //             const windowH = $(window).height();
-    //             if(scroll > objPos - windowH){
-    //                 $(this).css({
-    //                     'transform': 'translate(-100px,0)',
-    //                     'transition': '1s'
-    //                 })
-    //             } else {
-    //                 $(this).css({
-    //                     'transform': 'translate(-200px,0)',
-    //                     'transition': '1s'
-    //                 });
-    //             }
-    //         });
-    //         rightText.each(function(){   // left-in
-    //             const objPos = $(this).offset().top;
-    //             const scroll = $(window).scrollTop();
-    //             const windowH = $(window).height();
-    //             if(scroll > objPos - windowH){
-    //                 $(this).css({
-    //                     'transform': 'translate(0px,0)',
-    //                     'transition': '1s',
-    //                     opacity: '1'
-    //                 })
-    //             } else {
-    //                 $(this).css({
-    //                     'transform': 'translate(0px,100px)',
-    //                     'transition': '1s',
-    //                 opacity: '0'
-    //                 })
-    //             }
-    //         });
-    //         rightIn.each(function(){   // right-in
-    //             const objPos = $(this).offset().top;
-    //             const scroll = $(window).scrollTop();
-    //             const windowH = $(window).height();
-    //             if(scroll > objPos - windowH){
-    //                 $(this).css({
-    //                     'transform': 'translate(100px,0)',
-    //                     'transition': '1s'
-    //                 })
-    //             } else {
-    //                 $(this).css({
-    //                     'transform': 'translate(200px,0)',
-    //                     'transition': '1s'
-    //                 });
-    //             }
-    //         });
-    //         leftText.each(function(){
-    //             const objPos = $(this).offset().top;
-    //             const scroll = $(window).scrollTop();
-    //             const windowH = $(window).height();
-    //             if(scroll > objPos - windowH){
-    //                 $(this).css({
-    //                     'transform': 'translate(0px,0)',
-    //                     'transition': '1s',
-    //                     opacity: '1'
-    //                 })
-    //             } else {
-    //                 $(this).css({
-    //                     'transform': 'translate(0px,100px)',
-    //                     'transition': '1s',
-    //                 opacity: '0'
-    //                 })
-    //             }
-    //         });
-    //     }
-    // });
 // -------------------------------------------scroll-fadein---jquery-end
     const leftIn = $(".order-left-img")
     const rightText = $(".order-right-contents")
@@ -497,154 +344,159 @@ margin-bottom: 300px;
     white-space:pre;
 }
 /* -----------------------------------------------------------------------------------------------------------for PC */
-@media screen and (min-width: 950px) {
-h2{
-    color:#b9b9b9;
-    font-size: 80px;
-    margin: 200px 0;
-}
-h3{
-    color:#b9b9b9;
-    font-size: 50px;
-    margin: 100px 0;
-}
-.order-left-img{/* -----------------------odd contrents*/
-width: 500px;
-height: 500px;      
-transform: translate(-200px,0);
-background-repeat:  no-repeat;                         /* 画像の繰り返しを指定  */              
-background-position:center center;                     /* 画像の表示位置を指定  */
-background-size: cover;
-}
-.order-right-contents{
-width: 300px;
-transform: translate(0px,100px);
-opacity: 0;
-}
-.order-num-odd{
-font-size: 120px;
-color: #b9b9b9;
-text-align: left;
-border-bottom: 1px solid #b9b9b9;
-}
-.order-text-odd{
-margin-top: 50px;
-color: #b9b9b9;
-text-align: left;
-}
-/* ---------------------------------------------------------even contents*/
-.underbar{
-border-bottom: 1px solid #b9b9b9;
-}
-.order-left-contents{
-position: absolute;
-right: 520px;
-width: 300px;
-}
-.order-num-even{
-font-size: 120px;
-color: #b9b9b9;
-text-align: left;
-border-bottom: 1px solid #b9b9b9;
-}
-.order-text-even{
-margin-top: 50px;
-color: #b9b9b9;
-text-align: left;
-}
-.order-right-img{
-margin: 0 0 0 auto;
-width: 500px;
-height: 500px;
-background-color: #efeee8d1;
-background-repeat:  no-repeat;  
-background-position:center center;  
-background-size: cover;
-}
-}
-
-@media screen and (max-width: 909px) {  /* ----------------------------------------------------910 */
-h2{
-    color:#b9b9b9;
-    font-size: 80px;
-    margin: 200px 0;
-}
-h3{
-    color:#b9b9b9;
-    font-size: 50px;
-    margin: 100px 0;
-}
-.container{
-width: 100%;
-height: 500px;
-position: relative;
-}
-.order-left-img{/* -----------------------odd contrents*/
-width: 500px;
-height: 500px;      
-transform: translate(-200px,0);
-background-repeat:  no-repeat;                         /* 画像の繰り返しを指定  */              
-background-position:center center;                     /* 画像の表示位置を指定  */
-background-size: cover;
-}
-.order-right-contents{
-width: 300px;
-transform: translate(0px,100px);
-opacity: 0;
-}
-.order-num-odd{
-font-size: 120px;
-color: #b9b9b9;
-text-align: left;
-border-bottom: 1px solid #b9b9b9;
-}
-.order-text-odd{
-margin-top: 50px;
-color: #b9b9b9;
-text-align: left;
-}
-/* ---------------------------------------------------------even contents*/
-.underbar{
-border-bottom: 1px solid #b9b9b9;
-}
-.order-left-contents{
-position: absolute;
-right: 520px;
-width: 300px;
-}
-.order-num-even{
-font-size: 120px;
-color: #b9b9b9;
-text-align: left;
-border-bottom: 1px solid #b9b9b9;
-}
-.order-text-even{
-margin-top: 50px;
-color: #b9b9b9;
-text-align: left;
-}
-.order-right-img{
-margin: 0 0 0 auto;
-width: 500px;
-height: 500px;
-background-color: #efeee8d1;
-background-repeat:  no-repeat;  
-background-position:center center;  
-background-size: cover;
-}
+@media screen and (min-width: 900px) {
+    h2{
+        color:#b9b9b9;
+        font-size: 80px;
+        margin: 200px 0;
+    }
+    h3{
+        color:#b9b9b9;
+        font-size: 50px;
+        margin: 100px 0;
+    }
+    .order-left-img{/* -----------------------odd contrents*/
+    width: 500px;
+    height: 500px;      
+    transform: translate(-200px,0);
+    background-repeat:  no-repeat;                         /* 画像の繰り返しを指定  */              
+    background-position:center center;                     /* 画像の表示位置を指定  */
+    background-size: cover;
+    }
+    .order-right-contents{
+    width: 300px;
+    transform: translate(0px,100px);
+    opacity: 0;
+    }
+    .order-num-odd{
+    font-size: 120px;
+    color: #b9b9b9;
+    text-align: left;
+    border-bottom: 1px solid #b9b9b9;
+    }
+    .order-text-odd{
+    margin-top: 50px;
+    color: #b9b9b9;
+    text-align: left;
+    }
+    /* ---------------------------------------------------------even contents*/
+    .underbar{
+    border-bottom: 1px solid #b9b9b9;
+    }
+    .order-left-contents{
+    position: absolute;
+    right: 520px;
+    width: 300px;
+    }
+    .order-num-even{
+    font-size: 120px;
+    color: #b9b9b9;
+    text-align: left;
+    border-bottom: 1px solid #b9b9b9;
+    }
+    .order-text-even{
+    margin-top: 50px;
+    color: #b9b9b9;
+    text-align: left;
+    }
+    .order-right-img{
+    margin: 0 0 0 auto;
+    width: 500px;
+    height: 500px;
+    background-color: #efeee8d1;
+    background-repeat:  no-repeat;  
+    background-position:center center;  
+    background-size: cover;
+    }
 }
 
+
+/* --------------------------------------------------------------------for tablet */
+@media screen and (min-width: 640px) and (max-width:900px){
+    .container{
+        width: 60%;
+        height: 700px;
+        position: relative;
+    }
+    h2{
+        color:#b9b9b9;
+        font-size: 60px;
+        margin: 200px 0;
+    }
+    h3{
+        color:#b9b9b9;
+        font-size: 50px;
+        margin: 100px 0;
+    }
+    .order-left-img{/* -----------------------odd contrents*/
+    width: 500px;
+    height: 500px;      
+    transform: translate(-200px,0);
+    background-repeat:  no-repeat;                         /* 画像の繰り返しを指定  */              
+    background-position:center center;                     /* 画像の表示位置を指定  */
+    background-size: cover;
+    }
+    .order-right-contents{
+    width: 300px;
+    transform: translate(0px,100px);
+    opacity: 0;
+    position: absolute;
+    top: 520px;
+    left: 10px;
+    }
+    .order-num-odd{
+    font-size: 120px;
+    color: #b9b9b9;
+    text-align: left;
+    border-bottom: 1px solid #b9b9b9;
+    }
+    .order-text-odd{
+    margin-top: 50px;
+    color: #b9b9b9;
+    text-align: left;
+    }
+    /* ---------------------------------------------------------even contents*/
+    .underbar{
+    border-bottom: 1px solid #b9b9b9;
+    }
+    .order-left-contents{
+    position: absolute;
+    top: 520px;
+    right: 0px;
+    width: 300px;
+    }
+    .order-num-even{
+    font-size: 120px;
+    color: #b9b9b9;
+    text-align: left;
+    border-bottom: 1px solid #b9b9b9;
+    }
+    .order-text-even{
+    margin-top: 50px;
+    color: #b9b9b9;
+    text-align: left;
+    }
+    .order-right-img{
+    margin: 0 0 0 auto;
+    width: 500px;
+    height: 500px;
+    background-color: #efeee8d1;
+    background-repeat:  no-repeat;  
+    background-position:center center;  
+    background-size: cover;
+    }
+}
 
 /* -----------------------------------------------------------------------------------------------------------------------mobile */
 @media screen and (max-width: 640px) {
     .main-img{
-        height:600px;
+        height:550px;
         object-fit:cover;
     }
 
     .container{
         width: 100%;
-        height: 750px;
+        height: 700px;
         position: relative;
     }
     .order-left-img{
@@ -657,8 +509,8 @@ background-size: cover;
     }
     .order-right-contents{
     position: absolute;
-    top: 50px;
-    left: 460px;
+    top: 440px;
+    left: 10px;
     width: 300px;
     transform: translate(0px,100px);
     opacity: 0;
@@ -675,43 +527,44 @@ background-size: cover;
     text-align: left;
     }
 
-/* ---------------------------------------------------------even contents*/
-.underbar{
-border-bottom: 1px solid #b9b9b9;
-}
-.order-left-contents{
-position: absolute;
-top: 50px;
-right: 460px;
-width: 300px;
-}
-.order-num-even{
-font-size: 60px;
-color: #b9b9b9;
-text-align: left;
-border-bottom: 1px solid #b9b9b9;
-}
-.order-text-even{
-margin-top: 50px;
-color: #b9b9b9;
-text-align: left;
-}
-.order-right-img{
-margin: 0 0 0 auto;
-width: 400px;
-height: 400px;
-background-color: #efeee8d1;
-background-repeat:  no-repeat;  
-background-position:center center;  
-background-size: cover; 
-}
-.caution-text{
-    display: inline-block;
-    height: 300px;
+    /* ---------------------------------------------------------even contents*/
+    .underbar{
+    border-bottom: 1px solid #b9b9b9;
+    }
+    .order-left-contents{
+    position: absolute;
+    top: 440px;
+    left: 50px;
     width: 300px;
-    font-size: 12px;
-    color:#b9b9b9;
-}
+    }
+    .order-num-even{
+    font-size: 60px;
+    color: #b9b9b9;
+    text-align: left;
+    border-bottom: 1px solid #b9b9b9;
+    }
+    .order-text-even{
+    margin-top: 50px;
+    color: #b9b9b9;
+    text-align: left;
+    }
+    .order-right-img{
+    margin: 0 0 0 auto;
+    width: 400px;
+    height: 400px;
+    background-color: #efeee8d1;
+    background-repeat:  no-repeat;  
+    background-position:center center;  
+    background-size: cover; 
+    }
+    .caution-text{
+        display: inline-block;
+        
+        height: 300px;
+        width: 300px;
+        font-size: 12px;
+        color:#b9b9b9;
+    }
 }
 
 /* --------------------------------------------------------------------- */
