@@ -269,7 +269,7 @@
       top: 0;
       z-index: 3;
       width: 100%;
-      background-color: #efeee8a9;
+      background-color: #efeee8;
     }
 
     li{
@@ -304,7 +304,7 @@
       height: 50px;
       line-height: 50px;
       margin: 0px;
-      background-color: #efeee8a9;
+      background-color: #efeee8;
     }
     #what{
       cursor: pointer;
@@ -317,12 +317,12 @@
       position: absolute;
       padding: 0;
       margin: 0;
-      top: 180px;
+      top: 200px;
       width: 100%;
       z-index: 3;
     }
     .what-info{
-      background-color: #efeee8a9;
+      background-color: #ffffff;
       height: 50px;
       line-height: 50px;
       padding: 0;
