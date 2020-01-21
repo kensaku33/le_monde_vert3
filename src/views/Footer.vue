@@ -28,10 +28,12 @@
 
 @media screen and (max-width: 640px) {
 .footer{
-  margin-top: 100px;
+  margin-top: 50vh;
   margin-bottom: 0;
   width: 100%;
   background-color:#efeee8;
+  /* position: absolute;
+  bottom: 0; */
 
 }
 .footer-wrap{
