@@ -147,7 +147,7 @@
     z-index: 3;
     height: 160px;
     width: 100%;
-    background-color: #efeee8a9;
+    background-color: #efeee8;
   }
   ul{
     right: 30px;
@@ -167,7 +167,7 @@
     top: 0;
     z-index: 3;
     width: 100%;
-    background-color: #efeee8a9;
+    background-color: #efeee8;
   }
   .logo-img{
     height: 100px;
@@ -199,7 +199,7 @@
     z-index: 3;
   }
   .what-info{
-    background-color: #efeee8a9;
+    background-color: #efeee8;
     height: 50px;
     line-height: 50px;
     padding: 0 20px;
