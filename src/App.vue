@@ -28,6 +28,9 @@ export default {
   padding: 0px;
 }
 
+body{
+  width: 100vw;
+}
 *{
   font-family: 'Cormorant Garamond', serif;
 }
