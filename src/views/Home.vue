@@ -40,9 +40,20 @@
       </div>
       <div class="spring-box-bottom">
         <div class="spring-inner-blur">
-          <h2 class="spring-inner-title">春色の服</h2>
+          <h2 class="spring-inner-title">spring</h2>
           <p class="spring-inner-text">
-            パーソナルカラー診断でスプリングタイプの人は、透明感のある健康的な肌、ツヤのある髪、キラキラと輝くガラスのように澄んだ瞳の持ち主。明るく華やかなタイプです。
+            スプリングタイプの人は、
+            <br>
+            <br>
+            透明感のある健康的な肌、
+            <br>
+            ツヤのある髪、
+            <br>
+            <br>
+            キラキラと輝くガラスのように澄んだ瞳の持ち主。
+            <br>
+            <br>
+            明るく華やかなタイプです。
           </p>
           <a class="show2" id="hide-spring">文字を隠す</a>
         </div>
@@ -57,15 +68,20 @@
       </div>
       <div class="summer-box-bottom">
         <div class="summer-inner-blur">
-          <h2 class="summer-inner-title">夏色の服</h2>
+          <h2 class="summer-inner-title">summer</h2>
           <p class="summer-inner-text">
-            春はあけぼのちりぬるを
-          <br>
-          <br>
-          夏は夕暮れ
-          <br>
-          <br>
-          秋は紅葉が美しい
+            サマータイプの人は、
+            <br>
+            <br>
+            きめ細やかなふわっとした肌、
+            <br>
+            やわらかくさらりとした髪、
+            <br>
+            <br>
+            涼しげでソフトな瞳の持ち主。
+            <br>
+            <br>
+            上品でしっとりとした雰囲気を醸し出すタイプです。
           </p>
           <a class="show2" id="hide-summer">文字を隠す</a>
         </div>
@@ -81,15 +97,20 @@
       </div>
       <div class="autumn-box-bottom">
         <div class="autumn-inner-blur">
-          <h2 class="autumn-inner-title">秋色の服</h2>
+          <h2 class="autumn-inner-title">autumn</h2>
           <p class="autumn-inner-text">
-            春はあけぼのちりぬるを
-          <br>
-          <br>
-          夏は夕暮れ
-          <br>
-          <br>
-          秋は紅葉が美しい
+            オータムタイプの人は、
+            <br>
+            <br>
+            強い張りのあるつや肌、
+            <br>
+            ボリュームのあるナチュラルな髪、
+            <br>
+            <br>
+            深みのある濃い瞳の持ち主。
+            <br>
+            <br>
+            愛らしさと知性、あたたかい雰囲気を漂わせています。
           </p>
           <a class="show2" id="hide-autumn">文字を隠す</a>
         </div>
@@ -104,15 +125,18 @@
       </div>
       <div class="winter-box-bottom">
         <div class="winter-inner-blur">
-          <h2 class="winter-inner-title">冬色の服</h2>
+          <h2 class="winter-inner-title">winter</h2>
           <p class="winter-inner-text">
-            春はあけぼのちりぬるを
-          <br>
-          <br>
-          夏は夕暮れ
-          <br>
-          <br>
-          秋は紅葉が美しい
+            ウィンタータイプの人は、
+            <br>
+            <br>
+            強く輝くシャープな瞳の持ち主。
+            <br>
+            <br>
+            華やかな存在感が際立つタイプです。
+            <br>
+            <br>
+            第一印象に残りやすいタイプです。
           </p>
           <a class="show2" id="hide-winter">文字を隠す</a>
         </div>
@@ -518,13 +542,13 @@ li {
 
 .spring-inner-title{
   color: white;
-  font-size: 24px;
-  padding-top: 100px;
+  font-size: 50px;
+  padding-top: 60px;
   opacity: 0;
 }
 .spring-inner-text{
   color: white;
-  padding: 80px 0 50px 0;
+  padding: 60px 0 50px 0;
   opacity: 0;
 }
 #hide-spring{
@@ -574,13 +598,13 @@ li {
 
 .summer-inner-title{
   color: white;
-  font-size: 24px;
-  padding-top: 100px;
+  font-size: 50px;
+  padding-top: 60px;
   opacity: 0;
 }
 .summer-inner-text{
   color: white;
-  padding: 80px 0 50px 0;
+  padding: 60px 0 50px 0;
   opacity: 0;
 }
 #hide-summer{
@@ -629,13 +653,13 @@ li {
 
 .autumn-inner-title{
   color: white;
-  font-size: 24px;
-  padding-top: 100px;
+  font-size: 50px;
+  padding-top: 60px;
   opacity: 0;
 }
 .autumn-inner-text{
   color: white;
-  padding: 80px 0 50px 0;
+  padding: 60px 0 50px 0;
   opacity: 0;
 }
 #hide-autumn{
@@ -684,13 +708,13 @@ li {
 }
 .winter-inner-title{
   color: white;
-  font-size: 24px;
-  padding-top: 100px;
+  font-size: 50px;
+  padding-top: 60px;
   opacity: 0;
 }
 .winter-inner-text{
   color: white;
-  padding: 80px 0 50px 0;
+  padding: 60px 0 50px 0;
   opacity: 0;
 }
 #hide-winter{
