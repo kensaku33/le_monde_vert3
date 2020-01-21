@@ -50,7 +50,9 @@
             ツヤのある髪、
             <br>
             <br>
-            キラキラと輝くガラスのように澄んだ瞳の持ち主。
+            キラキラと輝くガラスのように
+            <br>
+            澄んだ瞳の持ち主。
             <br>
             <br>
             明るく華やかなタイプです。
@@ -81,7 +83,9 @@
             涼しげでソフトな瞳の持ち主。
             <br>
             <br>
-            上品でしっとりとした雰囲気を醸し出すタイプです。
+            上品でしっとりとした
+            <br>
+            雰囲気を醸し出すタイプです。
           </p>
           <a class="show2" id="hide-summer">文字を隠す</a>
         </div>
@@ -110,7 +114,9 @@
             深みのある濃い瞳の持ち主。
             <br>
             <br>
-            愛らしさと知性、あたたかい雰囲気を漂わせています。
+            愛らしさと知性、
+            <br>
+            あたたかい雰囲気を漂わせています。
           </p>
           <a class="show2" id="hide-autumn">文字を隠す</a>
         </div>
@@ -538,6 +544,8 @@ li {
   height: 100%;
   width: 0%;
   backdrop-filter: blur(10px);
+  /* padding: 50px; */
+  background-color: #a0a0a030;
 }
 
 .spring-inner-title{
@@ -594,6 +602,7 @@ li {
   height: 100%;
   width: 0%;
   backdrop-filter: blur(10px);
+  background-color: #a0a0a030;
 }
 
 .summer-inner-title{
@@ -649,6 +658,7 @@ li {
   height: 100%;
   width: 0%;
   backdrop-filter: blur(10px);
+  background-color: #a0a0a030;
 }
 
 .autumn-inner-title{
@@ -705,6 +715,7 @@ li {
   height: 100%;
   width: 0%;
   backdrop-filter: blur(10px);
+  background-color: #a0a0a030;
 }
 .winter-inner-title{
   color: white;
@@ -738,6 +749,53 @@ li {
 @media screen and (max-width: 640px) {
   .main-img{
     height:600px;
+  }
+  .spring-inner-title{
+    color: white;
+    font-size: 24px;
+    padding-top: 60px;
+    opacity: 0;
+  }
+  .spring-inner-text{
+    color: white;
+    padding: 60px 0 50px 0;
+    opacity: 0;
+  }
+
+  .summer-inner-title{
+    color: white;
+    font-size: 24px;
+    padding-top: 60px;
+    opacity: 0;
+  }
+  .summer-inner-text{
+    color: white;
+    padding: 60px 0 50px 0;
+    opacity: 0;
+  }
+
+  .autumn-inner-title{
+    color: white;
+    font-size: 24px;
+    padding-top: 60px;
+    opacity: 0;
+  }
+  .autumn-inner-text{
+    color: white;
+    padding: 60px 0 50px 0;
+    opacity: 0;
+  }
+
+  .winter-inner-title{
+    color: white;
+    font-size: 24px;
+    padding-top: 60px;
+    opacity: 0;
+  }
+  .winter-inner-text{
+    color: white;
+    padding: 60px 0 50px 0;
+    opacity: 0;
   }
 }
 
