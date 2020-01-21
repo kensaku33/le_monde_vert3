@@ -9,6 +9,8 @@
     <h2>Custom Order</h2>
     <p></p>
 
+    <div id="short">工程の確認はこちら</div>
+
 <!-- ---------------------------------------------------------container1 -->
 <section>
     <div class="container ">
@@ -76,7 +78,7 @@
 
 <section>
     <div class="container ">
-        <div class="order-left-img image1"></div>
+        <div class="order-left-img image5"></div>
         <div class="order-right-contents col-auto">
         <h1 class="order-num-odd">No.5</h1>
         <p class="order-text-odd">目型紙作成
@@ -103,7 +105,7 @@
             仮縫（かりぬい）
             </p>
         </div>
-        <div class="order-right-img image4"></div>
+        <div class="order-right-img image6"></div>
     </div>
 </section>
 <!-- ----------------------------------------------------------->
@@ -112,7 +114,7 @@
 
 <section>
     <div class="container ">
-        <div class="order-left-img image1"></div>
+        <div class="order-left-img image7"></div>
         <div class="order-right-contents col-auto">
         <h1 class="order-num-odd">No.7</h1>
         <p class="order-text-odd">
@@ -139,7 +141,7 @@
             試着、修正
             </p>
         </div>
-        <div class="order-right-img image4"></div>
+        <div class="order-right-img image8"></div>
     </div>
 </section>
 <!-- ----------------------------------------------------------->
@@ -148,7 +150,7 @@
 
 <section>
     <div class="container ">
-        <div class="order-left-img image1"></div>
+        <div class="order-left-img image9"></div>
         <div class="order-right-contents col-auto">
         <h1 class="order-num-odd">No.9</h1>
         <p class="order-text-odd">納品、請算（生地代、その他）</p>
@@ -178,6 +180,74 @@
         <br>
         納期に影響しますのでご注意ください。
     </p>
+</div>
+
+<div class="modal-contents" id="modal">
+    <div class="modal-inner">
+    <p class="modal-inner-text">
+        <span class="inner">オーダーの流れ</span>
+        <br>
+        <br>
+        <br>
+
+        <span class="line"></span>
+        １、目的、デザイン等の打ち合わせ
+        <br><br><br>
+        ２、パーソナルカラーの診断
+        <br>
+        ファッションテイスト診断　
+        <br>
+        ＊料金が発生します　¥10000-
+        <br><br><br>
+        ３、デザイン、生地の提案
+        <br><br><br>
+        ４、型紙作成のための採寸
+        <br><br><br>
+        ５、型紙作成
+        <br>
+            　ジャケット、ワンピース
+            <br>
+            ¥40000-
+            <br>
+            　パンツ、スカート、ブラウス
+            <br>
+            ￥20000-
+            <br><br><br>
+        ６、仮縫
+        <br><br><br>
+        ７、生地決定、本縫い
+        <br>
+            　ジャケット、ワンピース
+            <br>
+            ¥40000-
+            <br>
+            　パンツ、スカート、ブラウス
+            <br>
+            ￥20000-
+            <br>
+            <br>
+            <br>
+        ８、試着、修正
+        <br><br><br>
+        ９、納品、請算（生地代、その他）
+        <br><br><br>
+        ＊ご注意
+        <br><br>
+        ５、型紙作成時、
+        <br>
+        ７、本縫い時に料金が発生いたします。
+        <br>
+        <br>
+        ９、請算時は使用生地の代金の請算です。
+        <br>
+        <br>
+        納期は進行過程により異なります。
+        <br>
+        <br>
+        仮縫などのご来店が必要なタイミングは納期に影響しますのでご注意ください。
+        </p>
+    </div>
+    <div class="close">close</div>
 </div>
 
 
@@ -299,6 +369,13 @@ $(window).on('scroll', function(){
             })
         }
     });
+
+    $(document).on('click','#short', function(){     //------modal
+        $('#modal').fadeIn();
+    });
+    $(document).on('click','.close', function(){
+        $('#modal').hide();
+    })
 });
 
 </script>
@@ -325,20 +402,20 @@ margin-bottom: 300px;
     background-image:url("https://lh3.googleusercontent.com/Y_BtIupsprLVmAkR8Pvh4aKckD658OH3-u4SYkXaqPK4eeor257WyOUEyEg6ceP0GFzn3dhrrGM90ZBwF0kEWfO84WpcLyptlsFli1eLnUkuaSilwCEGFOeJIdM2eC2aDd7z1179SlA=w2400");
 }
 .image5{
-    background-image:url();
+    background-image:url("https://lh3.googleusercontent.com/28Dz_ZqoVdQjEeqTTEeoM16SXk_tROiCueuEodh9IXX2yPAyKW-o7yhR5XafsWO8MW3wcUZJDZBSh93vLr7udsW6LiEC3bQPjz_OZiwoqVayoZC-sYjZMYYUdLKk4q3NVklMdIxJ5wI=w2400");
 }
-.image6{
-    background-image:url();
+/* .image6{
+    background-image:url("https://lh3.googleusercontent.com/UlgVPV5wIbPNA6zLq3gGAHuhnO1o4xWS5jj919iEcrH68t77EKSBjUUL3E09suwB3ZBcEZlOMsX3GbXHk5ow3AjvtXTP1o7c_Q51PcoXN3uXBIu7L8AcaphtnTdtc0DsZMSlXJHnk8M=w2400");
 }
 .image7{
-    background-image:url();
+    background-image:url("https://lh3.googleusercontent.com/Zf_VQXz6OGluPiw55i3qH9iWnTV5n23Isro2Arymz7Ib57W_mNxv5nt_yhum71HSyUn-t31fQmjoyXk1qHpQw_tuKA7o02gdWV49ovtHNEUWXichfz246IME-J4w04G4SFDVFTZR-Bw=w2400");
 }
 .image8{
-    background-image:url();
+    background-image:url("https://lh3.googleusercontent.com/umb2ihY8iExeO8qUEktDQ5Rv79x77vKh-pZL6oEbq8nZZ3bAjUyUMBiMOWpzDPbEZ50Om6FmRgQ4Bc-dmNXccXicDZxtc3Qg4JmUdA7D6-NYy2OYoPiK7ATyEmY1FAxHZwJnWZ2XqN0=w2400");
 }
 .image9{
-    background-image:url();
-}
+    background-image:url("https://lh3.googleusercontent.com/ovwT3y0LVR3Y1yFDw73QBNx0k5E7kt7QSGpfObF5n4Z4Z66v7-pUt7_zWhnikJuw6IJ_5B42MR_s_S7dPh9q4VfrbK7W-lxZR-Ra8CZqAocdTa2aRSaXmgotoCLLZQJYvwzdu4zaAQo=w2400");
+} */
 
 .caution-text{
     white-space:pre;
@@ -565,9 +642,22 @@ margin-bottom: 300px;
         font-size: 12px;
         color:#b9b9b9;
     }
+
+    
 }
 
+
+
 /* --------------------------------------------------------------------- */
+
+.caution-text{
+        display: inline-block;
+        
+        height: 300px;
+        width: 300px;
+        font-size: 1rem;
+        color:#b9b9b9;
+    }
 h2{
     color:#b9b9b9;
     font-size: 80px;
@@ -598,4 +688,77 @@ h3{
 .fade-leave-to{
     opacity: 0;
 }
+
+#short{
+    border: 1px solid #b9b9b9;
+    color: #b9b9b9;
+    height: 50px;
+    line-height: 50px;
+    width: 200px;
+    font-weight: 100;
+    bottom: 50px;
+    left: 0;
+    right: 0;
+    margin: 0 auto 300px auto;
+    transition: .5s;
+    cursor: pointer;
+}
+#short:hover{
+    border: 1px solid white;
+    color: white;
+    background-color: #b9b9b9;
+}
+
+.modal-contents{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.77);
+    }
+    .modal-inner{
+    position:absolute;
+    /* border: 1px solid white; */
+    color: white;
+    width: 50%;
+    height: 65%;
+    padding: 50px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.386);
+    overflow: scroll;
+    }
+    .close{
+    color: white;
+    border: 1px solid white;
+    text-decoration: none;
+    text-shadow: none;
+    height: 50px;
+    line-height: 50px;
+    width: 100px;
+    font-weight: 100;
+    position: absolute;
+    bottom: 50px;
+    right: 0px;
+    left: 0;
+    margin: auto;
+    transition: .5s;
+    opacity: 1;
+    cursor: pointer;
+    }
+    .close:hover{
+    color: white;
+    opacity: .6;
+    }
+    .inner{
+        font-size: 24px;
+        padding: 0 0 3px 0;
+        border-bottom: 1px solid white;
+    }
 </style>
