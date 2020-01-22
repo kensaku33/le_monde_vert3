@@ -2,7 +2,9 @@
   <div class="Home">
     <transition name="fade" appear>
       <div class="hello">
-        <img src="@/assets/home-image.jpg" class="main-img img-fluid" alt="">
+        <img 
+        src="https://lh3.googleusercontent.com/UlgVPV5wIbPNA6zLq3gGAHuhnO1o4xWS5jj919iEcrH68t77EKSBjUUL3E09suwB3ZBcEZlOMsX3GbXHk5ow3AjvtXTP1o7c_Q51PcoXN3uXBIu7L8AcaphtnTdtc0DsZMSlXJHnk8M=w2400" 
+        class="main-img img-fluid" alt="">
       </div>
     </transition>
 
@@ -29,8 +31,7 @@
 
 
     <div class="sample mt-5">
-      <h1 class="m-2">Parsonal Color</h1>
-      <p class="your mb-5">あなたの色は？</p>
+      <p class="your my-5">which is your？</p>
 
     <!-- 春 -->
     <div class="season-wrapper">
@@ -399,6 +400,13 @@ $(function(){
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.hello{
+    height: 120vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    z-index: -3;
+}
 
 h1, h2 {
   font-weight: normal;
@@ -431,13 +439,17 @@ li {
 }
 
 .text{
+  color:white;
   margin-top: 100vh;
   margin-bottom: 200px;
+  padding: 100px 0;
   font-size: 18px;
+  backdrop-filter: blur(10px);
 }
 
 .your{
-  font-size: 1.4rem;
+  color: white;
+  font-size: 4rem;
 }
 .main-img{
   position: absolute;

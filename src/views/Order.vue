@@ -3,7 +3,7 @@
 <div class="order">
     <transition name="fade" appear>
         <div class="hello">
-            <img src="@/assets/Order-img.jpg" class="main-img img-fluid" alt="">
+            <img src="https://lh3.googleusercontent.com/yPoRXpyTSQW5h0_raL6f7lRgPO0JiIftaNbHYkS6qaUV4g8ludPwU1hAvao2RAKILMxfpCcYzrpHsjACrBf0rD7Ty8FC2A9N5Z0U-Zt9hdmWNiBizL2kmq4Df3DB6VeydjSp2pnDyWQ=w2400" class="main-img img-fluid" alt="">
         </div>
     </transition>
     <h2>Custom Order</h2>
@@ -13,7 +13,7 @@
 
 <!-- ---------------------------------------------------------container1 -->
 <section>
-    <div class="container ">
+    <div class="container background1">
         <div class="order-left-img image1"></div>
         <div class="order-right-contents col-auto">
             <h1 class="order-num-odd">No.1</h1>
@@ -26,7 +26,7 @@
     
 <!-- ---------------------------------------------------------container2 -->
 <section>
-    <div class="container">
+    <div class="container background2">
         <div class="order-left-contents">
         <h1 class="order-num-even">No.2</h1>
         <p class="order-text-even">
@@ -50,7 +50,7 @@
     
 <!-- ---------------------------------------------------------container3 -->
 <section>
-    <div class="container ">
+    <div class="container background1">
         <div class="order-left-img image3"></div>
         <div class="order-right-contents col-auto">
         <h1 class="order-num-odd">No.3</h1>
@@ -62,7 +62,7 @@
     
 <!-- ---------------------------------------------------------container4 -->
 <section>
-    <div class="container ">
+    <div class="container background2">
         <div class="order-left-contents">
         <h1 class="order-num-even">No.4</h1>
         <p class="order-text-even">
@@ -77,7 +77,7 @@
 <!-- ---------------------------------------------------------container5 -->
 
 <section>
-    <div class="container ">
+    <div class="container background1">
         <div class="order-left-img image5"></div>
         <div class="order-right-contents col-auto">
         <h1 class="order-num-odd">No.5</h1>
@@ -98,7 +98,7 @@
     
 <!-- ---------------------------------------------------------container6 -->
 <section>
-    <div class="container ">
+    <div class="container background2">
         <div class="order-left-contents">
         <h1 class="order-num-even">No.6</h1>
         <p class="order-text-even">
@@ -113,7 +113,7 @@
 <!-- ---------------------------------------------------------container7 -->
 
 <section>
-    <div class="container ">
+    <div class="container background1">
         <div class="order-left-img image7"></div>
         <div class="order-right-contents col-auto">
         <h1 class="order-num-odd">No.7</h1>
@@ -134,7 +134,7 @@
 
 <!-- ---------------------------------------------------------container8 -->
 <section>
-    <div class="container ">
+    <div class="container background2">
         <div class="order-left-contents">
         <h1 class="order-num-even">No.8</h1>
         <p class="order-text-even">
@@ -149,7 +149,7 @@
 <!-- ---------------------------------------------------------container9 -->
 
 <section>
-    <div class="container ">
+    <div class="container background1">
         <div class="order-left-img image9"></div>
         <div class="order-right-contents col-auto">
         <h1 class="order-num-odd">No.9</h1>
@@ -312,7 +312,7 @@ $(window).on('scroll', function(){
         if(scroll > objPos - windowH){
             $(this).css({
                 'transform': 'translate(0px,0)',
-                'transition': '1s',
+                'transition': '.6s',
                 opacity: '1'
             })
         } else {
@@ -374,12 +374,29 @@ $(window).on('scroll', function(){
 </script>
 
 <style scoped>
+.hello{
+    height: 120vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    z-index: -3;
+}
 .container{
 position: relative;
 display: flex;
 opacity: 0;
 transition: 1.5s;
 margin-bottom: 300px;
+padding: 0;
+}
+
+.background1{
+    background-color: rgba(255, 255, 255, 0);
+    backdrop-filter: blur(10px);
+}
+.background2{
+    /* background-color: rgba(0, 0, 0, 0.263); */
+    backdrop-filter: blur(10px);
 }
 
 .image1{
@@ -440,18 +457,18 @@ margin-bottom: 300px;
     }
     .order-num-odd{
     font-size: 120px;
-    color: #b9b9b9;
+    color: #ffffff;
     text-align: left;
-    border-bottom: 1px solid #b9b9b9;
+    border-bottom: 1px solid #ffffff;
     }
     .order-text-odd{
     margin-top: 50px;
-    color: #b9b9b9;
+    color: #ffffff;
     text-align: left;
     }
     /* ---------------------------------------------------------even contents*/
     .underbar{
-    border-bottom: 1px solid #b9b9b9;
+    border-bottom: 1px solid #ffffff;
     }
     .order-left-contents{
     position: absolute;
@@ -460,20 +477,19 @@ margin-bottom: 300px;
     }
     .order-num-even{
     font-size: 120px;
-    color: #b9b9b9;
+    color: #ffffff;
     text-align: left;
-    border-bottom: 1px solid #b9b9b9;
+    border-bottom: 1px solid #ffffff;
     }
     .order-text-even{
     margin-top: 50px;
-    color: #b9b9b9;
+    color: #ffffff;
     text-align: left;
     }
     .order-right-img{
     margin: 0 0 0 auto;
     width: 500px;
     height: 500px;
-    background-color: #efeee8d1;
     background-repeat:  no-repeat;  
     background-position:center center;  
     background-size: cover;
@@ -645,19 +661,18 @@ margin-bottom: 300px;
 
 .caution-text{
         display: inline-block;
-        
         height: 300px;
         width: 300px;
         font-size: 1rem;
-        color:#b9b9b9;
+        color:#ffffff;
     }
 h2{
-    color:#b9b9b9;
+    color:#ffffff;
     font-size: 80px;
     margin: 200px 0;
 }
 h3{
-    color:#b9b9b9;
+    color:#ffffff;
     font-size: 50px;
     margin: 100px 0;
 }
@@ -699,7 +714,7 @@ h3{
 #short:hover{
     border: 1px solid white;
     color: white;
-    background-color: #b9b9b9;
+    background-color: #00000037;
 }
 
 .modal-contents{

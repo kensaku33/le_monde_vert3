@@ -1,8 +1,8 @@
 <template>
     <div>
         <transition name="fade" appear>
-            <div class="contact-img">
-                <img src="@/assets/Contact-img.jpg" class="main-img img-fluid" alt="">
+            <div class="hello">
+                <img src="https://lh3.googleusercontent.com/VV780b0q1cAYToZe414q5zdGCPRECidz_YpNvLBs0tEC2q-ApfqQlT86g8wCsk4NuZ3MXf9HkQlYEXmczt5mjC_yYdJ3QCeAvC-YsoTgB917HlWuhygs37Q8b2vKB8K-mzNxVk8utEM=w2400" class="main-img img-fluid" alt="">
             </div>
         </transition>
             <div class="contact my-5">
@@ -17,6 +17,16 @@
 </template>
 
 <style scoped>
+.hello{
+    height: 120vh;
+    width: 100vw;
+    position: fixed;
+    top: 50px;
+    z-index: -3;
+}
+*{
+    color: white;
+}
 @media screen and (max-width: 640px) {
     .main-img{
         height:600px;
