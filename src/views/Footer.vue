@@ -32,8 +32,9 @@
   margin-bottom: 0;
   width: 100%;
   background-color:#efeee8;
-  /* position: absolute;
-  bottom: 0; */
+  position: absolute;
+  bottom: 0;
+  z-index: 50;
 
 }
 .footer-wrap{
@@ -66,6 +67,7 @@
   margin-top: 100px;
   width: 100%;
   background-color:#efeee8;
+  z-index: 50;
 }
 .footer-wrap{
   display:-webkit-box;
