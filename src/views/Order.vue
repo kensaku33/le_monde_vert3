@@ -265,14 +265,7 @@
 
 
 <script>
-export default {
-    data(){
-    return{
-        number: 'no.1',
-        text: '目的、デザイン等の打ち合わせ',
-        }
-    }
-}
+
 
 // -------------------------------------------scroll-fadein---jquery
 
@@ -404,7 +397,7 @@ margin-bottom: 300px;
 .image5{
     background-image:url("https://lh3.googleusercontent.com/28Dz_ZqoVdQjEeqTTEeoM16SXk_tROiCueuEodh9IXX2yPAyKW-o7yhR5XafsWO8MW3wcUZJDZBSh93vLr7udsW6LiEC3bQPjz_OZiwoqVayoZC-sYjZMYYUdLKk4q3NVklMdIxJ5wI=w2400");
 }
-/* .image6{
+.image6{
     background-image:url("https://lh3.googleusercontent.com/UlgVPV5wIbPNA6zLq3gGAHuhnO1o4xWS5jj919iEcrH68t77EKSBjUUL3E09suwB3ZBcEZlOMsX3GbXHk5ow3AjvtXTP1o7c_Q51PcoXN3uXBIu7L8AcaphtnTdtc0DsZMSlXJHnk8M=w2400");
 }
 .image7{
@@ -415,7 +408,7 @@ margin-bottom: 300px;
 }
 .image9{
     background-image:url("https://lh3.googleusercontent.com/ovwT3y0LVR3Y1yFDw73QBNx0k5E7kt7QSGpfObF5n4Z4Z66v7-pUt7_zWhnikJuw6IJ_5B42MR_s_S7dPh9q4VfrbK7W-lxZR-Ra8CZqAocdTa2aRSaXmgotoCLLZQJYvwzdu4zaAQo=w2400");
-} */
+}
 
 .caution-text{
     white-space:pre;
