@@ -181,7 +181,11 @@
   .link{
     height: 50px;
     line-height: 50px;
-    margin-right: 30px;
+    padding: 0 15px;
+    transition: 1s;
+  }
+  .link:hover{
+    background-color:#fffef6;
   }
   #what{
     cursor: pointer;
