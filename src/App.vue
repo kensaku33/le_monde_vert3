@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <Header/>
+    <PageTopBtn></PageTopBtn>
     <router-view/>
     <Footer/>
   </div>
@@ -9,11 +10,13 @@
 <script>
 import Header from './views/Header.vue'
 import Footer from './views/Footer.vue'
+import PageTopBtn from './components/PageTopBtn'
 export default {
   name: 'app',
   components:{
     Header,
     Footer,
+    PageTopBtn,
   }
 }
 </script>

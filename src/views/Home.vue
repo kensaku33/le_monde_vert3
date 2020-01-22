@@ -178,11 +178,13 @@ $(window).on('scroll', function(){
     const windowH = $(window).height();
     if(scroll > objPos - windowH){
       $(this).css({
-        'opacity': '1'
+        'opacity': '1',
+        transition: '.7s'
       });
     } else {
       $(this).css({
-        'opacity': '0'
+        'opacity': '0',
+        transition: '.7s'
       });
     }
   });
@@ -442,9 +444,13 @@ li {
   color:white;
   margin-top: 100vh;
   margin-bottom: 200px;
-  padding: 100px 0;
+  padding: 100px 0 200px 0;
   font-size: 18px;
   backdrop-filter: blur(10px);
+  transition: .5s;
+}
+.text:hover{
+  background-color: rgba(0, 0, 0, 0.112);
 }
 
 .your{
