@@ -32,8 +32,8 @@
   margin-bottom: 0;
   width: 100%;
   background-color:#efeee8;
-  position: absolute;
-  bottom: 0;
+  /* position: absolute;
+  bottom: 0; */
   z-index: 50;
 
 }

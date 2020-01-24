@@ -433,12 +433,12 @@ padding: 0;
 /* -----------------------------------------------------------------------------------------------------------for PC */
 @media screen and (min-width: 900px) {
     h2{
-        color:#b9b9b9;
+        color:#fff;
         font-size: 80px;
         margin: 200px 0;
     }
     h3{
-        color:#b9b9b9;
+        color:#fff;
         font-size: 50px;
         margin: 100px 0;
     }
@@ -505,12 +505,12 @@ padding: 0;
         position: relative;
     }
     h2{
-        color:#b9b9b9;
+        color:#fff;
         font-size: 60px;
         margin: 200px 0;
     }
     h3{
-        color:#b9b9b9;
+        color:#fff;
         font-size: 50px;
         margin: 100px 0;
     }
@@ -532,18 +532,18 @@ padding: 0;
     }
     .order-num-odd{
     font-size: 120px;
-    color: #b9b9b9;
+    color: #fff;
     text-align: left;
-    border-bottom: 1px solid #b9b9b9;
+    border-bottom: 1px solid #fff;
     }
     .order-text-odd{
     margin-top: 50px;
-    color: #b9b9b9;
+    color: #fff;
     text-align: left;
     }
     /* ---------------------------------------------------------even contents*/
     .underbar{
-    border-bottom: 1px solid #b9b9b9;
+    border-bottom: 1px solid #fff;
     }
     .order-left-contents{
     position: absolute;
@@ -553,13 +553,13 @@ padding: 0;
     }
     .order-num-even{
     font-size: 120px;
-    color: #b9b9b9;
+    color: #fff;
     text-align: left;
-    border-bottom: 1px solid #b9b9b9;
+    border-bottom: 1px solid #fff;
     }
     .order-text-even{
     margin-top: 50px;
-    color: #b9b9b9;
+    color: #fff;
     text-align: left;
     }
     .order-right-img{
@@ -603,19 +603,19 @@ padding: 0;
     }
     .order-num-odd{
     font-size: 60px;
-    color: #b9b9b9;
+    color: #fff;
     text-align: left;
-    border-bottom: 1px solid #b9b9b9;
+    border-bottom: 1px solid #fff;
     }
     .order-text-odd{
     margin-top: 50px;
-    color: #b9b9b9;
+    color: #fff;
     text-align: left;
     }
 
     /* ---------------------------------------------------------even contents*/
     .underbar{
-    border-bottom: 1px solid #b9b9b9;
+    border-bottom: 1px solid #fff;
     }
     .order-left-contents{
     position: absolute;
@@ -625,13 +625,13 @@ padding: 0;
     }
     .order-num-even{
     font-size: 60px;
-    color: #b9b9b9;
+    color: #fff;
     text-align: left;
-    border-bottom: 1px solid #b9b9b9;
+    border-bottom: 1px solid #fff;
     }
     .order-text-even{
     margin-top: 50px;
-    color: #b9b9b9;
+    color: #fff;
     text-align: left;
     }
     .order-right-img{
@@ -649,7 +649,7 @@ padding: 0;
         height: 300px;
         width: 300px;
         font-size: 12px;
-        color:#b9b9b9;
+        color:#fff;
     }
 
     
@@ -698,8 +698,8 @@ h3{
 }
 
 #short{
-    border: 1px solid #b9b9b9;
-    color: #b9b9b9;
+    border: 1px solid #fff;
+    color: #fff;
     height: 50px;
     line-height: 50px;
     width: 200px;
