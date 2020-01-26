@@ -4,7 +4,7 @@
     <div class="footer-left">
     <img src="@/assets/logo.png" class="footer-logo">
     </div>
-    <div class="footer-info">
+    <!-- <div class="footer-info">
       <h4>LE MONDE VERT</h4>
       <hr>
         モンドベール
@@ -12,7 +12,7 @@
         大阪府堺市南区宮山台2-3-1
         <br>
         info@monde-vert.com
-    </div>
+    </div> -->
   </div>
   <br>
   <hr>
@@ -32,8 +32,8 @@
   margin-bottom: 0;
   width: 100%;
   background-color:#efeee8;
-  position: absolute;
-  bottom: 0;
+  /* position: absolute;
+  bottom: 0; */
   z-index: 50;
 
 }

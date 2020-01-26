@@ -295,7 +295,7 @@ $(function(){
     });
   });   //-----------------------------------------summer
 
-  // --------------------------------------------autumn
+  // ---------------------------------------------------------------------------------------------------------------------------------autumn
   var num3 = 0;
   $(document).on('click','#toggle-autumn', function(){
     num3 = num3 + 1;
@@ -343,7 +343,9 @@ $(function(){
       opacity: '0',
       transition: '.3s',
     });
-  });   //-----------------------------------------autumn
+  });   
+  
+  //---------------------------------------------------------------------------------------------end-----------autumn
 
   // --------------------------------------------winter
   var num4 = 0;
@@ -491,49 +493,6 @@ li {
 }
 
 
-.inner-blur{
-  margin: 0 0 0 auto;
-  height: 100%;
-  width: 0%;
-  backdrop-filter: blur(10px);
-}
-
-.inner-title{
-  color: white;
-  font-size: 24px;
-  padding-top: 100px;
-  opacity: 0;
-}
-.inner-text{
-  color: white;
-  padding: 80px 0 50px 0;
-  opacity: 0;
-}
-.show{
-  border: 1px solid white;
-  color:white;
-  padding: 10px 30px;
-  transition: 1s;
-  cursor: pointer;
-  display: inline-block;
-}
-.show:hover{
-  letter-spacing: 14px;
-}
-
-.show2{
-  border: 1px solid white;
-  color:white;
-  padding: 10px 30px;
-  transition: 1s;
-  cursor: pointer;
-  display: inline-block;
-}
-.show2:hover{
-  letter-spacing: 5px;
-  color: white;
-}
-
 /* 共通項 ------------------ ここまで ------------------- 共通項 ------------------- */
 
 
@@ -556,13 +515,13 @@ li {
   height: 0px;
   opacity: 0;
   transition: 1s;
+  overflow: hidden;
 }
 .spring-inner-blur{
   margin: 0 0 0 auto;
   height: 100%;
   width: 0%;
   backdrop-filter: blur(10px);
-  /* padding: 50px; */
   background-color: #a0a0a030;
 }
 
@@ -581,7 +540,6 @@ li {
   border: 1px solid white;
   color:white;
   padding: 10px 30px;
-
   transition: 1s;
   cursor: pointer;
   display: inline-block;
@@ -614,6 +572,7 @@ li {
   height: 0px;
   transform: 1s;
   transition: 1s;
+  overflow: hidden;
 }
 .summer-inner-blur{
   margin: 0 0 0 auto;
@@ -650,7 +609,7 @@ li {
 
 /* ----------------------------------------------------ここまでsummer */
 
-/* ------------------------------------------------------autumn  */
+/* ---------------------------------------------------------------------------------------------------------------autumn  */
 
 .autumn-box{
   width: 100%;
@@ -670,6 +629,7 @@ li {
   height: 0px;
   transform: 1s;
   transition: 1s;
+  overflow: hidden;
 }
 .autumn-inner-blur{
   margin: 0 0 0 auto;
@@ -726,6 +686,7 @@ li {
   height: 0px;
   transform: 1s;
   transition: 1s;
+  overflow: hidden;
 }
 
 .winter-inner-blur{
@@ -750,7 +711,6 @@ li {
   border: 1px solid white;
   color:white;
   padding: 10px 30px;
-
   transition: 1s;
   cursor: pointer;
   display: inline-block;
