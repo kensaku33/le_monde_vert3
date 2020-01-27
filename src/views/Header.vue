@@ -8,16 +8,6 @@
       <nav id="nav">
         <ul class="list">
 
-          <!-- あとで消すこと -->
-          <li class="link">
-            <router-link 
-              to="/About"
-              active-class="link--active"
-              exact
-              >
-              about
-            </router-link>
-          </li>
 
 
           <li class="link">
