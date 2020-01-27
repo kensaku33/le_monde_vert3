@@ -5,9 +5,9 @@
                 <img src="https://lh3.googleusercontent.com/VV780b0q1cAYToZe414q5zdGCPRECidz_YpNvLBs0tEC2q-ApfqQlT86g8wCsk4NuZ3MXf9HkQlYEXmczt5mjC_yYdJ3QCeAvC-YsoTgB917HlWuhygs37Q8b2vKB8K-mzNxVk8utEM=w2400" class="main-img img-fluid" alt="">
             </div>
         </transition>
-            <div class="contact my-5">
-                <h1 class="m-5">Contact</h1>
-                <h1 class="address">LE MONDE VERT</h1>
+            <div class="contact">
+                <h1>Contact</h1>
+                <h2>LE MONDE VERT</h2>
                 <h4>モンドベール</h4><br>
                 <p class="address">大阪府堺市南区宮山台2-3-1</p>
                 <p class="name">吉田加代 <br> Kayo Yoshida</p>
@@ -26,6 +26,19 @@
 }
 *{
     color: white;
+}
+.contact{
+    height: 45vh;
+    width: 100vw;
+    margin: 100px 0;
+}
+h1{
+    font-size: 48px;
+    margin-bottom: 60px;
+}
+h2{
+    font-size: 40px;
+    margin-bottom: 10px;
 }
 @media screen and (max-width: 640px) {
     .main-img{
