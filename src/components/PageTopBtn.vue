@@ -6,7 +6,6 @@
 
 <script>
 export default {
-  el: '#page-top',
   methods:{
     moveToTop(){
       const duration = 1000;
